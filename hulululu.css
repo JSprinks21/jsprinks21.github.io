@@ -1,0 +1,36 @@
+body{
+			background-color:black;
+			background-image:url(images/OhNoes.jpg);
+			background-repeat:no-repeat;
+			background-position:center top;
+			background-attachment:fixed;
+			background-size: 100% 100%;
+		}
+table{
+			text-align:center;
+		}
+h1{
+			color:white;
+		}
+p{
+			color:white;
+		}
+a{
+			/*width:125px;
+			height:125px;*/
+			border-radius:100%;
+			background-color:black;
+		}
+a:hover{
+			background-color:blue;
+		}
+.table_image{
+			/*width:125px;*/
+			width:15em;
+			border-radius:100%;
+		}
+.msg{
+			text-align: center;
+			font-size: 100px;
+			color: red;
+		}

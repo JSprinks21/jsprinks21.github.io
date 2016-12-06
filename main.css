@@ -1,0 +1,33 @@
+body{
+			background-color:black;
+			background-image:url(images/BackgroundPic1.jpg);
+			background-repeat:no-repeat;
+			background-position:center top;
+			background-attachment:fixed;
+			text-align:center;
+		}
+table{
+			text-align:center;
+			margin:auto;
+			margin-top: 5em;
+		}
+h1{
+			color:white;
+		}
+p{
+			color:white;
+		}
+a{
+			/*width:125px;
+			height:125px;*/
+			border-radius:100%;
+			background-color:black;
+		}
+a:hover{
+			background-color:blue;
+		}
+.table_image{
+			/*width:125px;*/
+			width:8em;
+			border-radius:100%;
+		}
