@@ -13,15 +13,15 @@
 				<td><a href="http://google.com" target="_blank"><img src="images/GoogleLogo.png" class="table_image" alt="Google"/></a></td>
 				<td><a href="http://gmail.google.com" target="_blank"><img src="images/GmailLogo.png" class="table_image" alt="Gmail"/></a></td>
 				<td><a href="http://drive.google.com" target="_blank"><img src="images/DriveLogo.png" class="table_image" alt="Google Drive"/></a></td>
-				<td><a href="https://yahoo.com" target="_blank"><img src="images/YahooLogo.jpg" class="table_image" alt="Yahoo Logo"/></a></td>
-				<td><a href="https://usaa.com" target="_blank"><img src="images/USAALogo.png" class="table_image" alt="USAA Logo"/></a></td>
+				<td><a href="https://slack.com" target="_blank"><img src="images/SlackLogo.svg" class="table_image" alt="Slack"/></a></td>
+				<td><a href="https://usaa.com" target="_blank"><img src="images/USAALogo.png" class="table_image" alt="USAA"/></a></td>
 			</tr>
 			<tr>
 				<td><a href="http://facebook.com" target="_blank"><img src="images/FacebookLogo.png" class="table_image" alt="Facebook"/></a></td>
 				<td><a href="https://myelms.umd.edu/login" target="_blank"><img src="images/CanvasLogo.png" class="table_image" alt="Canvas"/></a></td>
-				<td><a href="http://piazza.com" target="_blank"><img src="images/PiazzaLogo.png" class="table_image" alt="Piazza Logo"/></a></td>
+				<td><a href="http://piazza.com" target="_blank"><img src="images/PiazzaLogo.png" class="table_image" alt="Piazza"/></a></td>
 				<td><a href="http://thenewboston.org/" target="_blank"><img src="images/TheNewBostonLogo.png" class="table_image" alt="The New Boston"/></a></td>
-				<td><a href="https://discover.com" target="_blank"><img src="images/DiscoverLogo.jpg" class="table_image" alt="Discover Logo"/></a></td>
+				<td><a href="https://discover.com" target="_blank"><img src="images/DiscoverLogo.jpg" class="table_image" alt="Discover"/></a></td>
 			</tr>
 			<tr>
 				<td><a href="http://www.reddit.com" target="_blank"><img src="images/RedditLogo.jpeg" class="table_image" alt="Reddit"/></a></td>
@@ -33,7 +33,7 @@
 				
 			</tr>
 			<tr>
-				<td><a href="http://youtube.com" target="_blank"><img src="images/YoutubeLogo.jpg" class="table_image" alt="Youtube Logo"/></a></td>
+				<td><a href="http://youtube.com" target="_blank"><img src="images/YoutubeLogo.jpg" class="table_image" alt="Youtube"/></a></td>
 				<td><a href="http://umcp.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=15551&catalogId=10001&langId=-1" target="_blank"><img src="images/BNCLogo.jpg" class="table_image" alt="BNC"/></a></td>
 				<td><a href="http://umd.edu" target="_blank"><img src="images/UMDLogo.png" class="table_image" alt="UMD"/></a></td>
 				<td><a href="http://pandora.com" target="_blank"><img src="images/PandoraLogo.jpg" class="table_image" alt="Pandora"/></a></td>
