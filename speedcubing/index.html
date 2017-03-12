@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CMSC389N P1: Cubing</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="speedcubing.css"/>
+</head>
+<body>
+    <header>
+        <h1>Speed Cubing <a href="https://en.wikipedia.org/wiki/Speedcubing"><img id="header_img" src="images/moyu.png" alt="moyu.png"/></a></h1>
+    </header>
+    <article>
+		<h2>What is Speed Cubing?</h2>
+        <p>The Rubik's Cube, first invented by Erno Rubik, is quite possibly the best-selling puzzle game in the world.
+        With over 43 quintillion possible arrangements, many consider the cube to be virtually unsolvable. In reality, it is
+        fairly easy to learn how to solve. In fact, it has been proven that no matter how it is scrambled, the 3x3 Rubik's Cube
+        can be solved in 20 moves or less. Although it would be quite difficult for a human to determine the optimal solution to
+        a scrambled cube, it can easily be solved in well under 100 moves, and there is a thriving community of people, called speed
+        cubers, who compete to solve the Rubik's Cube and other similar puzzles as fast as possible. Below I have layed out the many
+        of the current speed cubing world records. I have also listed some of the most popular methods for solving the cube.</p>
+    </article>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+				<tr>
+					<td colspan="6"><h2>Cubing World Records</h2></td>
+				</tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" colspan="2"><strong>Solve Type</strong></td><td colspan="4"><strong>Record Holder and Time</strong></td>
+                </tr>
+		<tr>
+		  <td colspan="2"><strong>Single</strong></td><td colspan="2"><strong>Average</strong></td>
+		</tr>
+                <tr>
+                    <td><strong>2x2</strong></td><td>Normal</td><td>Maciej&nbsp;Czapiewski</td><td>0.49</td><td>Lucas&nbsp;Etter</td><td>1.51</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>3x3</strong></td><td>Normal</td><td>Feliks&nbsp;Zemdegs</td><td>4.73</td><td>Feliks&nbsp;Zemdegs</td><td>6.45</td>
+                </tr>
+                <tr>
+                    <td>Blindfolded</td><td>Kaijun&nbsp;Lin</td><td>18.50</td><td>Kaijun&nbsp;Lin</td><td>24.38</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>4x4</strong></td><td>Normal</td><td>Feliks&nbsp;Zemdegs</td><td>21.54</td><td>Sebastian&nbsp;Weyer</td><td>25.96</td>
+                </tr>
+                <tr>
+                    <td>Blindfolded</td><td>Kaijun&nbsp;Lin</td><td>1:41.90</td><td>N/A</td><td>N/A</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><strong>5x5</strong></td><td>Normal</td><td>Feliks&nbsp;Zemdegs</td><td>41.27</td><td>Feliks&nbsp;Zemdegs</td><td>49.32</td>
+                </tr>
+                <tr>
+                    <td>Blindfolded</td><td>Roman&nbsp;Strakhov</td><td>4:42.06</td><td>N/A</td><td>N/A</td>
+                </tr>
+                <tr>
+                    <td><strong>6x6</strong></td><td>Normal</td><td>Feliks&nbsp;Zemdegs</td><td>1:27.85</td><td>Feliks&nbsp;Zemdegs</td><td>1:34.68</td>
+                </tr>
+                <tr>
+                    <td><strong>7x7</strong></td><td>Normal</td><td>Feliks&nbsp;Zemdegs</td><td>2:20.66</td><td>Feliks&nbsp;Zemdegs</td><td>2:22.55</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+					<td colspan="6"><a href="https://www.worldcubeassociation.org/results/regions.php">Source</a></td>
+				</tr>
+            </tfoot>
+        </table>
+    </div>
+    <section>
+        <h2>Cubing Methods</h2>
+        <ul>
+            <li>
+                <strong>Fridrich/CFOP</strong>
+                <ol class="latin-list">
+                    <li>Cross: Solve a cross on the bottom of the cube.</li>
+                    <li>F2L (First Two Layers): Solve the first two layers by pairing corner and edge pieces and inserting them into the bottom two layers.</li>
+                    <li>OLL (Orient Last Layer): Use one of 57 algorithms to orient the last layer.</li>
+                    <li>PLL (Permute Last Layer): Use one of 21 algorithms to permute the last layer.</li>
+                </ol>
+            </li>
+            <li>
+                <strong>Roux</strong>
+                <ol class="latin-list">
+                    <li>First Block: Solve a 1x2x3 block.</li>
+                    <li>Second Block: Solve a second 1x2x3 block directly opposite the first.</li>
+                    <li>CMLL/COLL: Orient and permute the last layer corners.</li>
+					<li>EO (Edge Orientation): Orient the last six edges.</li>
+                    <li>LSE (Last Six Edges): Permute the last six edges.</li>
+                </ol>
+            </li>
+            <li>
+                <strong>ZZ</strong>
+                <ol class="latin-list">
+                    <li>EOLine: Simultaneously orient all edges, and solve a line on the bottom of the cube from front to back.</li>
+                    <li>F2L (First Two Layers: Solve the first two layers.</li>
+                    <li>LL (Last Layer): The last layer will already be oriented, so it just needs to be permuted.</li>
+                </ol>
+            </li>
+            <li>
+                <strong>Petrus</strong>
+                <ol class="latin-list">
+                    <li>Build a 2x2x2 block.</li>
+                    <li>Expand the block to a 2x2x3.</li>
+                    <li>Orient the edges.</li>
+                    <li>Finish first two layers.</li>
+                    <li>Permute last layer corners.</li>
+                    <li>Orient last layer corners.</li>
+                    <li>Permute last layer edges.</li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+    <footer>&copy; 2017 Joseph Sprinkle</footer>
+</body>
+</html>
