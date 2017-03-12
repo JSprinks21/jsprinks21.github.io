@@ -2,11 +2,6 @@ body {
     background-color: #b3cce6;
 }
 
-h1 {
-    text-shadow: 0.06em 0.06em rgb(25, 51, 77);
-}
-
-
 td {
     text-align:center;
 }
@@ -41,6 +36,10 @@ a:active {
 
 .latin-list {
     font-family: "Lower Latin";
+}
+
+.pref {
+    color: blue;
 }
 
 #header_img {
