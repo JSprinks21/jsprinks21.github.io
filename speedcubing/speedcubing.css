@@ -14,6 +14,10 @@ p {
     margin: 1em;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 p:hover {
     color: #003300;
 }
@@ -40,6 +44,10 @@ a:active {
 
 .pref {
     color: blue;
+}
+
+.coll-pref {
+    color: green;
 }
 
 #header_img {
