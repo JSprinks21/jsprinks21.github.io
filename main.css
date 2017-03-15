@@ -1,24 +1,31 @@
-body{
-			background-color:black;
-			background-image:url(images/BackgroundPic1.jpg);
-			background-repeat:no-repeat;
-			background-position:center top;
-			background-attachment:fixed;
-			text-align:center;
-		}
-table{
-			text-align:center;
-			margin:auto;
-			margin-top: 5em;
-		}
-h1{
-			color:white;
-		}
-p{
-			color:white;
-		}
+body {
+            background-color:black;
+            background-image:url(images/BackgroundPic1.jpg);
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-attachment:fixed;
+            text-align:center;
+}
 
-.table_image{
-			width:8em;
-			border-radius:20%;
-		}
+table {
+            text-align:center;
+            margin:auto;
+            margin-top: 5em;
+}
+
+td {
+            padding: 0.5em;
+}
+                        
+h1 {
+	color:white;
+}
+                        
+p {
+	color:white;
+}
+
+.table_image {
+            width:8em;
+            border-radius:20%;
+}

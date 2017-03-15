@@ -59,6 +59,14 @@ a:active {
     color: green;
 }
 
+.label-data {
+    width: 25%;
+}
+
+.alg-data {
+    width: 50%;
+}
+
 #header_img {
     width:3em;
 }
