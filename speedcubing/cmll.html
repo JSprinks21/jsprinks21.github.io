@@ -11,538 +11,469 @@
             <link rel="stylesheet" href="speedcubing.css"/>
         </head>
         <body>
-            <h1>CMLL O:</h1>
+            <h1>CMLL Algorithms for all 42 cases</h1>
+            <p>Algorithms are listed in order of preference. Algorithms in <span style="color: green;">green</span> will not affect edge orientation.
+            Those in <span style="color: blue;">blue</span> will. Sources: <a href="algdb.net">algdb.net</a> and
+            <a href="https://docs.google.com/document/d/1S_y2evAxJ2vMMFDtfGSOsgHuDMYR-sEjoEU_mtSD7Qc/edit">Kian's CMLL doc</a>.</p><br/><br/>
+            
+            <h2>CMLL O:</h2>
             <table>
                 <tr>
-                    <td><h3>O 1</h3></td>
+                    <td><h3>O 1</h3><br/><h3>Adjacent Swap</h3></h2></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U L&#39; U2 R U&#39; R&#39; U2 R2 x&#39;" />
+                        <img src="images/O_1" />
                     </td>
                     <td>
-                        y R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2 U&#39; R&#39;<br/>
-                        R&#39; U L&#39; U2 R U&#39; R&#39; U2 R2 x&#39;<br/>
-                        y R U R&#39; U&#39; R&#39; F R2 U&#39; R&#39; U&#39; R U R&#39; F&#39;<br/>
-                        y r U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2 U&#39; r&#39;<br/>
-                        <span class="pref">y&#39; x R&#39; U R&#39; D2 R U&#39; R&#39; D2 R2 x&#39;</span><br/>
+                        <span class="coll">R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2 U&#39; R&#39;</span><br/>
+                        <span class="cmll">r U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2 U&#39; r&#39;</span><br/>
+                        <span class="coll">y x R&#39; U R&#39; D2 R U&#39; R&#39; D2 R2 x&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>O 2</h3></td>
+                    <td><h3>O 2</h3><br/><h3>Diagonal Swap</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U L&#39; U2 R U&#39; x&#39; U L&#39; U2 R U&#39; R x&#39;" />
+                        <img src="images/O_2" />
                     </td>
                     <td>
-                        <span class="coll-pref">F R U&#39; R&#39; U&#39; R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R F&#39;</span><br/>
-                        R&#39; U L&#39; U2 R U&#39; x&#39; U L&#39; U2 R U&#39; R x&#39;<br/>
-                        r&#39; U&#39; r&#39; D&#39; r U&#39; r&#39; D r U r&#39; D&#39; r U r&#39; D r2<br/>
-                        <span class="pref">R2 D r&#39; U r D&#39; R2 U&#39; F&#39; U&#39; F</span><br/>
-                        x&#39; R U&#39; R&#39; D R U R&#39; u2 R&#39; U R D R&#39; U&#39; R<br/>
+                        <span class="coll">F R U&#39; R&#39; U&#39; R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R F&#39;</span><br/>
+                        <span class="cmll">R2 D r&#39; U r D&#39; R2 U&#39; F&#39; U&#39; F</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL AS (Anti-sune):</h1>
+            <h2>CMLL H:</h2>
             <table>
                 <tr>
-                    <td><h3>AS 1</h3></td>
+                    <td><h3>H 1</h3><br/><h3>Columns</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U&#39; R U&#39; R&#39; U2 R" />
+                        <img src="images/H_1" />
                     </td>
                     <td>
-                        <span class="pref">R&#39; U&#39; R U&#39; R&#39; U2 R</span><br/>
-                        y R U2 R&#39; U&#39; R U&#39; R&#39;<br/>
-                        y2 L&#39; U&#39; L U&#39; L&#39; U2 L<br/>
-                        y&#39; L U2 L&#39; U&#39; L U&#39; L&#39;<br/>
+                        <span class="coll">(U) R U R&#39; U R U&#39; R&#39; U R U2&#39; R&#39;</span><br/>
+                        <span class="cmll">r U2 R&#39; U&#39; R U R&#39; U&#39; R U&#39; r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>AS 2</h3></td>
+                    <td><h3>H 2</h3><br/><h3>Row</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R2 D R&#39; U R D&#39; R&#39; U R&#39; U&#39; R U&#39; R&#39;" />
+                        <img src="images/H_2" />
+                    </td>
+                    <td>
+                        <span class="cmll">r U&#39; r&#39; F U2&#39; r2&#39; F r U&#39; r</span><br/>
+                        <span class="coll">(U&#39;) R U R&#39; U R U r&#39; F R&#39; F&#39; r</span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>H 3</h3><br/><h3>Column</h3></td>
+                    <td>
+                        <img src="images/H_3" />
+                    </td>
+                    <td>
+                        <span class="cmll">R U2&#39; R2&#39; F R F&#39; U2 R&#39; F R F&#39;</span><br/>
+                        <span class="coll">F R U&#39; R&#39; U R U2 R&#39; U&#39; R U R&#39; U&#39; F&#39;</span><br/>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>H 4</h3><br/><h3>Rows</h3></td>
+                    <td>
+                        <img src="images/H_4" />
+                    </td>
+                    <td>
+                        <span class="coll">F R U R&#39; U&#39; R U R&#39; U&#39; R U R&#39; U&#39; F&#39;</span><br/>
+                        <span class="cmll">R&#39; F R U2&#39; R&#39; F&#39; R U F R U R&#39; U F&#39;</span><br/>
+                    </td>
+    
+                </tr>
+            </table>
+            
+            <h2>CMLL AS (Anti-sune):</h2>
+            <table>
+                <tr>
+                    <td><h3>AS 1</h3><br/><h3>Right Bar</h3></td>
+                    <td>
+                        <img src="images/As_1" />
+                    </td>
+                    <td>
+                        <span class="coll">(U) R&#39; U&#39; R U&#39; R&#39; U2 R</span><br/>
+                        <span class="cmll">(U) r&#39; U&#39; R U&#39; R&#39; U2 r</span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>AS 2</h3><br/><h3>Columns</h3></td>
+                    <td>
+                        <img src="images/As_2" />
                     </td>
     
                     <td>
-                        y2 R2 D R&#39; U R D&#39; R&#39; U R&#39; U&#39; R U&#39; R&#39;<br/>
-                        y2 l&#39; U R U&#39; L2 U2 R&#39; U R U2 L2 x&#39;<br/>
-                        y R&#39; U&#39; R U&#39; R&#39; U R&#39; D&#39; R U R&#39; D R2<br/>
-                        y L F2 L2 U2 L F&#39; L&#39; U2 L2 F2 L&#39;<br/>
+                        <span class="coll">(U&#39;) R2 D R&#39; U R D&#39; R&#39; U R&#39; U&#39; R U&#39; R&#39;</span><br/>
+                        <span class="cmll">(U&#39;) r R D R&#39; U R D&#39; R&#39; U R&#39; U&#39; R U&#39; r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>AS 3</h3></td>
+                    <td><h3>AS 3</h3><br/><h3>Back Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; x&#39; F U&#39; R U L&#39; U2 R&#39; U2 R" />
+                        <img src="images/As_3" />
                     </td>
                     <td>
-                        y2 F&#39; L F L&#39; U2 L&#39; U2 L<br/>
-                        y2 F&#39; r U r&#39; U2 r&#39; F2 r<br/>
-                        y&#39; x&#39; F U&#39; R U L&#39; U2 R&#39; U2 R<br/>
-                        y2 F&#39; r U r&#39; U2 L&#39; U2 L<br/>
+                        <span class="cmll">(U&#39;) F&#39; L F L&#39; U2 L&#39; U2 L</span><br/>
+                        <span class="coll">(U&#39;) M F&#39; L F L&#39; U2 L&#39; U2 L M&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>AS 4</h3></td>
+                    <td><h3>AS 4</h3><br/><h3>X Checkerboard</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R U2 R&#39; U2 R&#39; F R F&#39;" />
+                        <img src="images/As_4" />
                     </td>
     
                     <td>
-                        y2 R U2 R&#39; U2 R&#39; F R F&#39;<br/>
-                        L U2 L&#39; U2 r&#39; U L U&#39; x<br/>
-                        y2 R U2 R&#39; U2 r&#39; F R F&#39; M&#39;<br/>
-                        y2 r U2 r&#39; U2 R&#39; F R F&#39;<br/>
+                        <span class="cmll">(U&#39;) R U2 R&#39; U2 R&#39; F R F&#39;</span><br/>
+                        <span class="coll">(U&#39;) R U2 R&#39; U2 r&#39; F R F&#39; M&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>AS 5</h3></td>
+                    <td><h3>AS 5</h3><br/><h3>Forward Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U L U&#39; R U L&#39;" />
+                        <img src="images/As_5" />
                     </td>
     
                     <td>
-                        y2 L&#39; U R U&#39; L U R&#39;<br/>
-                        R&#39; U L U&#39; R U L&#39;<br/>
-                        y2 R&#39; F R F&#39; r U r&#39;<br/>
+                        <span class="coll">(U&#39;) L&#39; U R U&#39; L U R&#39;</span><br/>
+                        <span class="cmll">(U&#39;) R&#39; F R F&#39; r U r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>AS 6</h3></td>
+                    <td><h3>AS 6</h3><br/><h3>Left Bar</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R&#39; U&#39; R U&#39; L U&#39; R&#39; U L&#39; U2 R" />
+                        <img src="images/As_6" />
                     </td>
                     
                     <td>
-                        R U R&#39; F&#39; R U2 R&#39; U&#39; R U&#39; R&#39; F R U&#39; R&#39;<br/>
-                        R U2 R&#39; F R&#39; F&#39; R U&#39; R U&#39; R&#39;<br/>
-                        y2 R&#39; U&#39; R U&#39; L U&#39; R&#39; U L&#39; U2 R<br/>
-                        y2 R&#39; U&#39; R U&#39; l U&#39; R&#39; U l&#39; U2 R<br/>
+                        <span class="cmll">R&#39; U&#39; R U&#39; R&#39; U R&#39; F R F&#39; U R</span><br/>
+                        <span class="coll">(U&#39;) R&#39; U&#39; R U&#39; L U&#39; R&#39; U L&#39; U2 R</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL S (Sune):</h1>
+            <h2>CMLL S (Sune):</h2>
             <table>
                 <tr>
-                    <td><h3>S 1</h3></td>
+                    <td><h3>S 1</h3><br/><h3>Left Bar</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U R&#39; U R U2 R&#39;" />
+                        <img src="images/S_1" />
                     </td>
                     <td>
-                        <span class="pref">R U R&#39; U R U2 R&#39;</span><br/>
-                        r U R&#39; U R U2 r&#39;<br/>
-                        y&#39; R&#39; U2 R U R&#39; U R<br/>
-                        R U R&#39; U r U2 r&#39;<br/>
+                        <span class="coll">(U) R U R&#39; U R U2 R&#39;</span><br/>
+                        <span class="cmll">(U) r U R&#39; U R U2 r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>S 2</h3></td>
+                    <td><h3>S 2</h3><br/><h3>X Checkerboard</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; F2 R U2 R U&#39; L&#39; U x&#39;" />
+                        <img src="images/S_2" />
                     </td>
                     <td>
-                        L&#39; U2 L U2 L F&#39; L&#39; F<br/>
-                        r&#39; F2 r U2 r U&#39; r&#39; F<br/>
-                        R&#39; F2 R U2 R U&#39; L&#39; U x&#39;<br/>
-                        R&#39; F2 R U2 r U&#39; r&#39; F<br/>
+                        <span class="cmll">(U) L&#39; U2 L U2 L F&#39; L&#39; F</span><br/>
+                        <span class="coll">(U) L&#39; U2 L U2 l F&#39; L&#39; F M&#39;</span><br/>
                     </td>
     
                 </tr>
                 <tr>
-                    <td><h3>S 3</h3></td>
+                    <td><h3>S 3</h3><br/><h3>Forward Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=x U R&#39; U&#39; L U2 R U2 R&#39;" />
+                        <img src="images/S_3" />
                     </td>
                     <td>
-                        F R&#39; F&#39; R U2 R U2 R&#39;<br/>
-                        x U R&#39; U&#39; L U2 R U2 R&#39;<br/>
-                        F R&#39; F&#39; R U2 r U2 r&#39;<br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h3>S 4</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; R U R&#39; U R U&#39; R D R&#39; U&#39; R D&#39; R2" />
-                    </td>
-                    <td>
-                        y&#39; R U R&#39; U R U&#39; R D R&#39; U&#39; R D&#39; R2<br/>
-                        r U&#39; L&#39; U R2 U2 L U&#39; L&#39; U2 R2 x&#39;<br/>
-                        y l U&#39; R&#39; U2 R&#39; D R U2 R&#39; D&#39; R2 U l&#39;<br/>
-                        y2 R2 D&#39; R U&#39; R&#39; D R U&#39; R U R&#39; U R<br/>
+                        <span class="cmll">(U) F R&#39; F&#39; R U2 R U2 R&#39;</span><br/>
+                        <span class="coll">(U) M F R&#39; F&#39; R U2 R U2 r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>S 5</h3></td>
+                    <td><h3>S 4</h3><br/><h3>Columns</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U&#39; L&#39; U R&#39; U&#39; L" />
+                        <img src="images/S_4" />
                     </td>
                     <td>
-                        R U&#39; L&#39; U R&#39; U&#39; L<br/>
-                        L F&#39; L&#39; F l&#39; U&#39; l<br/>
+                        <span class="coll">(U2) R&#39; U&#39; R U&#39; R2 F&#39; R U R U&#39; R&#39; F U2 R</span><br/>
+                        <span class="cmll">(U) R U R&#39; U&#39; R&#39; F R F&#39; R U R&#39; U R U2 R&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>S 6</h3></td>
+                    <td><h3>S 5</h3><br/><h3>Back Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R U R&#39; U L&#39; U R U&#39; L U2 R&#39;" />
+                        <img src="images/S_5" />
                     </td>
                     <td>
-                        y2 R U R&#39; U R&#39; F R F&#39; R U2 R&#39;<br/>
-                        y2 R U R&#39; U L&#39; U R U&#39; L U2 R&#39;<br/>
-                        y2 R U R&#39; F&#39; R U R&#39; U R U2 R&#39; F R U&#39; R&#39;<br/>
-                        R&#39; U2 l U&#39; R U l&#39; U R&#39; U R<br/>
+                        <span class="coll">(U) R U&#39; L&#39; U R&#39; U&#39; L</span><br/>
+                        <span class="cmll">(U) r U&#39; L&#39; U R&#39; U&#39; l</span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>S 6</h3><br/><h3>Right Bar</h3></td>
+                    <td>
+                        <img src="images/S_6" />
+                    </td>
+                    <td>
+                        <span class="cmll">(U&#39;) R U R&#39; U R&#39; F R F&#39; R U2 R&#39;</span><br/>
+                        <span class="coll">(U&#39;) R U R&#39; U L&#39; U R U&#39; L U2 R&#39;</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL L (Bowtie):</h1>
+            <h2>CMLL L (Bowtie):</h2>
             <table>
                 <tr>
-                    <td><h3>L 1</h3></td>
+                    <td><h3>L 1</h3><br/><h3>Pure</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; R U2 R&#39; U&#39; R U R&#39; U&#39; R U R&#39; U&#39; R U&#39; R&#39;" />
+                        <img src="images/L_1" />
                     </td>
                     <td>
-                        y&#39; R U2 R&#39; U&#39; R U R&#39; U&#39; R U R&#39; U&#39; R U&#39; R&#39;<br/>
-                        y R U2 R&#39; U&#39; R U&#39; R&#39; U2 R U R&#39; U R U2 R&#39;<br/>
-                        y2 R&#39; U&#39; R U&#39; R&#39; U R U&#39; R&#39; U R U&#39; R&#39; U2 R<br/>
-                        y R U R&#39; U R U2 R&#39; U R&#39; U&#39; R U&#39; R&#39; U2 R<br/>
+                        <span class="coll">R U R&#39; U R U&#39; R&#39; U R U&#39; R&#39; U R U2 R&#39;</span><br/>
+                        <span class="cmll">R U R&#39; U&#39; R&#39; F R F&#39; R&#39; F R F&#39; r U r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>L 2</h3></td>
+                    <td><h3>L 2</h3><br/><h3>Back Commutator</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U2 R&#39; D&#39; R U2 R&#39; D R2" />
+                        <img src="images/L_2" />
                     </td>
                     <td>
-                        R&#39; U2 R&#39; D&#39; R U2 R&#39; D R2<br/>
-                        y2 L&#39; U2 L&#39; D&#39; L U2 L&#39; D L2<br/>
-                        y2 R&#39; F2 R&#39; U&#39; R F2 R&#39; U R2<br/>
-                        y2 F U2 F&#39; U&#39; R&#39; F&#39; R U&#39; R&#39; F&#39; R<br/>
+                        <span class="coll">(U) R&#39; U2 R&#39; D&#39; R U2 R&#39; D R2</span><br/>
+                        <span class="cmll">(U2) R U R&#39; U&#39; R&#39; F R2 U&#39; R&#39; U R U R&#39; F&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>L 3</h3></td>
+                    <td><h3>L 3</h3><br/><h3>Front Commutator</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y R&#39; U&#39; R U2 L&#39; U R&#39; U&#39; L U&#39; R" />
+                        <img src="images/L_3" />
                     </td>
                     <td>
-                        y R U2 R D R&#39; U2 R D&#39; R2<br/>
-                        R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2 U&#39; R&#39; U2 R<br/>
-                        y R&#39; U&#39; R U2 L&#39; U R&#39; U&#39; L U&#39; R<br/>
-                        y&#39; l U R&#39; D R U2 R&#39; D&#39; R U l&#39;<br/>
+                        <span class="coll">(U2) R U2 R D R&#39; U2 R D&#39; R2</span><br/>
+                        <span class="cmll">R U R&#39; U R&#39; F R F&#39; U2 R&#39; F R F&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>L 4</h3></td>
+                    <td><h3>L 4</h3><br/><h3>Inverse</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; L&#39; U&#39; L&#39; U R U&#39; L U x&#39;" />
+                        <img src="images/L_4" />
                     </td>
                     <td>
-                        y F R&#39; F&#39; R U R U&#39; R&#39;<br/>
-                        y&#39; L&#39; U&#39; L&#39; U R U&#39; L U x&#39;<br/>
-                        l U&#39; R&#39; D R U R&#39; D&#39; x<br/>
-                        y2 r U&#39; L&#39; D L U r&#39; B&#39;<br/>
+                        <span class="cmll">(U2) F R&#39; F&#39; R U R U&#39; R&#39;</span><br/>
+                        <span class="coll">(U2) F R&#39; F&#39; r U R U&#39; r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>L 5</h3></td>
+                    <td><h3>L 5</h3><br/><h3>Mirror</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; x L&#39; D L U&#39; L&#39; D&#39; L U x&#39;" />
+                        <img src="images/L_5" />
                     </td>
                     <td>
-                        y F R U&#39; R&#39; U&#39; R U R&#39; F&#39;<br/>
-                        y l&#39; U R D&#39; R&#39; U&#39; l B<br/>
-                        <span class="pref">y2 F&#39; r U R&#39; U&#39; r&#39; F R</span><br/>
-                        y&#39; x L&#39; D L U&#39; L&#39; D&#39; L U x&#39;<br/>
+                        <span class="cmll">(U2) F R U&#39; R&#39; U&#39; R U R&#39; F&#39;</span><br/>
+                        <span class="coll">(U&#39;) F&#39; r U R&#39; U&#39; r&#39; F R</span><br/>
+                        <span class="coll">(U2) F&#39; r U R&#39; U&#39; r&#39; F R</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>L 6</h3></td>
+                    <td><h3>L 6</h3><br/><h3>Diagonal</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; L&#39; U2 R U&#39; r&#39; U2 R l U&#39; R&#39;" />
+                        <img src="images/L_6" />
                     </td>
                     <td>
-                        y R U2 R2 F R F&#39; R U2 R&#39;<br/>
-                        y r U2 R2 F R F&#39; R U2 r&#39;<br/>
-                        y&#39; L&#39; U2 R U&#39; r&#39; U2 R l U&#39; R&#39;<br/>
-                        y&#39; R&#39; U&#39; R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R2<br/>
+                        <span class="cmll">(U2) R U2 R2 F R F&#39; R U2 R&#39;</span><br/>
+                        <span class="coll">(U2) r U2 R2 F R F&#39; R U2 r&#39;</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL U (Headlights):</h1>
+            <h2>CMLL U (Headlights):</h2>
             <table>
                 <tr>
-                    <td><h3>U 1</h3></td>
+                    <td><h3>U 1</h3><br/><h3>Front Row</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U&#39; R U&#39; R&#39; U2 R2 U R&#39; U R U2 R&#39;" />
+                        <img src="images/U_1" />
                     </td>
                     <td>
-                        R&#39; U&#39; R U&#39; R&#39; U2 R2 U R&#39; U R U2 R&#39;<br/>
-                        y&#39; F2 R U&#39; R&#39; U R U R2 F&#39; R F&#39;<br/>
-                        r&#39; U&#39; R U&#39; R&#39; U2 R2 U R&#39; U R U2 r&#39;<br/>
-                        R2 F U&#39; F U F2 R2 U&#39; R&#39; F R<br/>
+                        <span class="cmll">R2&#39; F U&#39; F U F2 R2 U&#39; R&#39; F R</span><br/>
+                        <span class="coll">(U) R U2&#39; R2&#39; U&#39; R2 U&#39; R&#39; U R&#39; U&#39; R U R&#39; U R</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>U 2</h3></td>
+                    <td><h3>U 2</h3><br/><h3>Rows</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; F R2 D R&#39; U R D&#39; R2&#39; U&#39; F&#39;" />
+                        <img src="images/U_2" />
                     </td>
                     <td>
-                        y&#39; F R2 D R&#39; U R D&#39; R2&#39; U&#39; F&#39;<br/>
-                        y&#39; L U&#39; R&#39; U L&#39; U2 F&#39; U F R<br/>
-                        y R&#39; U L U&#39; R U2 F U&#39; F&#39; L&#39;<br/>
-                        R&#39; F R U&#39; R&#39; U&#39; R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R F&#39; R<br/>
+                        <span class="cmll">(U&#39;) F R2 D R&#39; U R D&#39; R2&#39; U&#39; F&#39;</span><br/>
+                        <span class="coll">R&#39; F R U&#39; R&#39; U&#39; R U R&#39; F&#39; R U R&#39; U&#39; R&#39; F R F&#39; R</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>U 3</h3></td>
+                    <td><h3>U 3</h3><br/><h3>Forward Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R2 D R&#39; U2 R D&#39; R&#39; U2 R&#39;" />
+                        <img src="images/U_3" />
                     </td>
                     <td>
-                        <span class="pref">y2 R2 D R&#39; U2 R D&#39; R&#39; U2 R&#39;</span><br/>
-                        L F&#39; L&#39; U&#39; L F&#39; L&#39; U&#39; F&#39; U2 F<br/>
-                        r U&#39; r&#39; U&#39; r U&#39; r&#39; U&#39; F&#39; U2 F<br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h3>U 4</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R&#39; F U&#39; R F R&#39; U R F&#39;" />
-                    </td>
-                    <td>
-                        y2 R&#39; F2 R U2 R U2 R&#39; F2 R U2 R&#39;<br/>
-                        y2 R&#39; F U&#39; R F R&#39; U R F&#39;<br/>
-                        y&#39; l U R&#39; D R U&#39; x U R&#39; U&#39; F&#39;<br/>
-                        y&#39; R&#39; D R U&#39; R U&#39; R&#39; U R&#39; D&#39; R<br/>
+                        <span class="coll">(U2) R2 D R&#39; U2 R D&#39; R&#39; U2 R&#39;</span><br/>
+                        <span class="cmll">r U&#39; r&#39; U&#39; r U&#39; r&#39; U&#39; F&#39; U2&#39; F</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>U 5</h3></td>
+                    <td><h3>U 4</h3><br/><h3>X Checkerboard</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R2 D&#39; R U2 R&#39; D R U2 R" />
+                        <img src="images/U_4" />
                     </td>
                     <td>
-                        R2 D&#39; R U2 R&#39; D R U2 R<br/>
-                        R&#39; F R U R&#39; F R U F U2 F&#39;<br/>
+                        <span class="cmll">(U2) r U&#39; r&#39; U r&#39; D&#39; r U&#39; r&#39; D r</span><br/>
+                        <span class="coll">R U R&#39; U&#39; R&#39; F2 R2 U&#39; R&#39; U&#39; R U R&#39; F2</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>U 6</h3></td>
+                    <td><h3>U 5</h3><br/><h3>Back Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; F R U R&#39; U&#39; F&#39;" />
+                        <img src="images/U_5" />
                     </td>
                     <td>
-                        y&#39; F R U R&#39; U&#39; F&#39;<br/>
-                        y F U R U&#39; R&#39; F&#39;<br/>
-                        y2 R&#39; U&#39; F&#39; U F R<br/>
+                        <span class="coll">R2&#39; D&#39; R U2 R&#39; D R U2 R</span><br/>
+                        <span class="cmll">R&#39; F R U R&#39; F R U F U2&#39; F&#39;</span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>U 6</h3><br/><h3>Back Row</h3></td>
+                    <td>
+                        <img src="images/U_6" />
+                    </td>
+                    <td>
+                        <span class="cmll">(U&#39;) F R U R&#39; U&#39; F&#39;</span><br/>
+                        <span class="coll">R U&#39; R&#39; U&#39; R U R D R&#39; U R D&#39; R2</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL T (Chameleon):</h1>
+            <h2>CMLL T (Chameleon):</h2>
             <table>
                 <tr>
-                    <td><h3>T 1</h3></td>
+                    <td><h3>T 1</h3><br/><h3>Rows</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U2 R&#39; U&#39; R U&#39; R2&#39; U2&#39; R U R&#39; U R" />
+                        <img src="images/T_1" />
                     </td>
                     <td>
-                        R U2 R&#39; U&#39; R U&#39; R2&#39; U2&#39; R U R&#39; U R<br/>
-                        F R&#39; F R2 U&#39; R&#39; U&#39; R U R&#39; F2<br/>
-                        r U2 R&#39; U&#39; R U&#39; r2 U2 R U R&#39; U r<br/>
-                        y2 R&#39; U2 R2 B2 D B D&#39; B R2 U2 R<br/>
+                        <span class="cmll">F R&#39; F R2 U&#39; R&#39; U&#39; R U R&#39; F2</span><br/>
+                        <span class="coll">(U)&#39; R U R&#39; U R U&#39; R&#39; U R&#39; U&#39; R2 U&#39; R2&#39; U2&#39; R</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>T 2</h3></td>
+                    <td><h3>T 2</h3><br/><h3>Front Row</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U r U2 R2&#39; F R F&#39; R" />
+                        <img src="images/T_2" />
                     </td>
                     <td>
-                        R&#39; U r U2 R2&#39; F R F&#39; r<br/>
-                        R&#39; U r U2 R2&#39; F R F&#39; R<br/>
-                        r&#39; U r U2&#39; R2&#39; F R F&#39; R<br/>
-                        r&#39; U r&#39; U2 l U&#39; l&#39; U2 r2 B&#39;<br/>
+                        <span class="cmll">r&#39; U r U2 R2 F R F&#39; R</span><br/>
+                        <span class="coll">R&#39; U r U2 R2 F R F&#39; r</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>T 3</h3></td>
+                    <td><h3>T 3</h3><br/><h3>Right Bar</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; R&#39; U&#39; R U L U&#39; R&#39; U x" />
+                        <img src="images/T_3" />
                     </td>
                     <td>
-                        y L&#39; U&#39; L U L F&#39; L&#39; F<br/>
-                        y r&#39; F&#39; r U r U&#39; r&#39; F<br/>
-                        y R&#39; F&#39; r U R U&#39; r&#39; F<br/>
-                        y&#39; R&#39; U&#39; R U L U&#39; R&#39; U x<br/>
+                        <span class="cmll">(U) L&#39; U&#39; L U L F&#39; L&#39; F</span><br/>
+                        <span class="coll">(U) l&#39; U&#39; L U l F&#39; L&#39; F</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>T 4</h3></td>
+                    <td><h3>T 4</h3><br/><h3>Back Row</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=F U&#39; L&#39; U R2 U&#39; L U R&#39; l&#39; U&#39; x&#39;" />
+                        <img src="images/T_4" />
                     </td>
                     <td>
-                        y2 F R U R&#39; U&#39; R U&#39; R&#39; U&#39; R U R&#39; F&#39;<br/>
-                        F R&#39; U&#39; R F&#39; R&#39; U F&#39; R<br/>
-                        y R U2 R&#39; F2 R U2 R&#39; U2 R&#39; F2 R<br/>
-                        y R&#39; D R U&#39; R U R&#39; U R&#39; D&#39; R<br/>
+                        <span class="cmll">r&#39; D&#39; r U r&#39; D r U&#39; r U r&#39;</span><br/>
+                        <span class="coll">(U2) F R U R&#39; U&#39; R U&#39; R&#39; U&#39; R U R&#39; F&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>T 5</h3></td>
+                    <td><h3>T 5</h3><br/><h3>Left Bar</h3></td>
                      <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; R U R&#39; U&#39; R&#39; F R F&#39;" />
+                        <img src="images/T_5" />
                     </td>
                     <td>
-                        y&#39; R U R&#39; U&#39; R&#39; F R F&#39;<br/>
-                        R U R D R&#39; U&#39; R D&#39; R2<br/>
-                        y&#39; r U R&#39; U&#39; L&#39; U l F&#39;<br/>
-                        <span class="pref">y&#39; r U R&#39; U&#39; r&#39; F R F&#39;</span><br/>
+                        <span class="cmll">(U&#39;) R U R&#39; U&#39; R&#39; F R F&#39;</span><br/>
+                        <span class="coll">(U&#39;) r U R&#39; U&#39; r&#39; F R F&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>T 6</h3></td>
+                    <td><h3>T 6</h3><br/><h3>Columns</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U R2 D r&#39; U2 r D&#39; R2&#39; U&#39; R " />
+                        <img src="images/T_6" />
                     </td>
                     <td>
-                        R&#39; U R2 D r&#39; U2 r D&#39; R2&#39; U&#39; R <br/>
-                        R2&#39; U&#39; R F R&#39; U R2 U&#39; R&#39; F&#39; R<br/>
-                        y2 r2 D&#39; r U r&#39; D r2 U&#39; r&#39; U&#39; r<br/>
-                        y2 R2 U R&#39; B&#39; R U&#39; R2 U R B R&#39;<br/>
+                        <span class="cmll">(U2) r2 D&#39; r U r&#39; D r2 U&#39; r&#39; U&#39; r</span><br/>
+                        <span class="coll">R&#39; U R2 D r&#39; U2 r D&#39; R2 U&#39; R</span><br/>
                     </td>
                 </tr>
             </table>
             
-            <h1>CMLL PI (Asymmetric Cross):</h1>
+            <h2>CMLL Pi:</h2>
             <table>
                 <tr>
-                    <td><h3>PI 1</h3></td>
+                    <td><h3>Pi 1</h3><br/><h3>Right Bar</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U2 R2&#39; U&#39; R2 U&#39; R2&#39; U2 R" />
+                        <img src="images/Pi_1" />
                     </td>
                     <td>
-                        F R U R&#39; U&#39; R U R&#39; U&#39; F&#39;<br/>
-                        <span class="pref">R U2 R2&#39; U&#39; R2 U&#39; R2&#39; U2 R</span><br/>
-                        f R U R&#39; U&#39; R U R&#39; U&#39; f&#39;<br/>
-                        y2 F&#39; L&#39; U&#39; L U L&#39; U&#39; L U F<br/>
+                        <span class="coll">R U2 R2&#39; U&#39; R2 U&#39; R2&#39; U2&#39; R</span><br/>
+                        <span class="cmll">r&#39; U r2 U&#39; r2 U&#39; r2 U r&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>PI 2</h3></td>
+                    <td><h3>Pi 2</h3><br/><h3>Back Slash</h3></td>
                      <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U&#39; R U&#39; R&#39; U2 R U&#39; L&#39; U R U&#39; L U R&#39;" />
+                        <img src="images/Pi_2" />
                     </td>
                     <td>
-                        l U R&#39; D R U&#39; R U&#39; R2&#39; D&#39; R U l&#39;<br/>
-                        y F R&#39; F&#39; R U2 R U&#39; R&#39; U R U2 R&#39;<br/>
-                        R&#39; U&#39; R U&#39; R&#39; U2 R U&#39; L&#39; U R U&#39; L U R&#39;<br/>
-                        y F U R U&#39; R2 F&#39; R U2 R U2 R&#39;<br/>
+                        <span class="cmll">(U) F R&#39; F&#39; R U2 R U&#39; R&#39; U R U2&#39; R&#39;</span><br/>
+                        <span class="coll">R&#39; F2 R U2&#39; R U2&#39; R&#39; F2 U&#39; R U&#39; R&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>PI 3</h3></td>
+                    <td><h3>Pi 3</h3><br/><h3>X Checkerboard</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=L&#39; U2 y R U2 R&#39; U2 R&#39; U2 F y x" />
+                        <img src="images/Pi_3" />
                     </td>
                     <td>
-                        y&#39; R&#39; F R U F U&#39; R U R&#39; U&#39; F&#39;<br/>
-                        y2 F U&#39; F&#39; U R&#39; F2 R U2 R&#39; F R<br/>
-                        L&#39; U2 y R U2 R&#39; U2 R&#39; U2 F y x<br/>
-                        y2 F R&#39; F&#39; R U2 F R&#39; F&#39; R2 U2 R&#39;<br/>
+                        <span class="cmll">(U&#39;) R&#39; F R U F U&#39; R U R&#39; U&#39; F&#39;</span><br/>
+                        <span class="coll">R U2 R&#39; U L&#39; U2 R U R&#39; U&#39; R U&#39; M&#39; x&#39;</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>PI 4</h3></td>
+                    <td><h3>Pi 4</h3><br/><h3>Forward Slash</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U R&#39; U R U2 R&#39; U&#39; R U&#39; L&#39; U R&#39; U&#39; L" />
+                        <img src="images/Pi_4" />
                     </td>
                     <td>
-                        R U2 R&#39; U&#39; R U R&#39; U2 R&#39; F R F&#39;<br/>
-                        R U2&#39; R&#39; U2 R&#39; F R2 U R&#39; U&#39; F&#39;<br/>
-                        R U R&#39; U R U2 R&#39; U&#39; R U&#39; L&#39; U R&#39; U&#39; L<br/>
-                        y F&#39; U&#39; L&#39; U L2 F L&#39; U2 L&#39; U2 L<br/>
+                        <span class="cmll">R U2 R&#39; U&#39; R U R&#39; U2&#39; R&#39; F R F&#39;</span><br/>
+                        <span class="coll">(U&#39;) R&#39; U2 R U R&#39; U R2 U&#39; L&#39; U R&#39; U&#39; L</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>PI 5</h3></td>
+                    <td><h3>Pi 5</h3><br/><h3>Columns</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R&#39; U L U&#39; R U&#39; L&#39; U&#39; L U&#39; L&#39;" />
+                        <img src="images/Pi_5" />
                     </td>
                     <td>
-                        y2 L&#39; U R U&#39; L U&#39; R&#39; U&#39; R U&#39; R&#39;<br/>
-                        y2 R&#39; F R F&#39; r U&#39; R&#39; U&#39; R U&#39; r&#39;<br/>
-                        y2 r&#39; F R F&#39; r U&#39; R&#39; U&#39; R U&#39; R&#39;<br/>
-                        R&#39; U L U&#39; R U&#39; L&#39; U&#39; L U&#39; L&#39;<br/>
+                        <span class="coll">R&#39; U L U&#39; R U&#39; r&#39; F&#39; r U&#39; L&#39;</span><br/>
+                        <span class="cmll">(U2) R&#39; U R U&#39; R2&#39; F R2 U R&#39; U&#39; F&#39; R</span><br/>
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>PI 6</h3></td>
+                    <td><h3>Pi 6</h3><br/><h3>Left Bar</h3></td>
                     <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y2 R U R&#39; U R U&#39; y R U&#39; R&#39; y L&#39;" />
+                        <img src="images/Pi_6" />
                     </td>
                     <td>
-                        y2 R&#39; U&#39; R U&#39; R&#39; U F&#39; U F R<br/>
-                        y&#39; R&#39; U&#39; R&#39; F R F&#39; R U&#39; R&#39; U2 R<br/>
-                        y2 R U R&#39; U R U&#39; y R U&#39; R&#39; y L&#39;<br/>
+                        <span class="cmll">(U&#39;) R&#39; U&#39; R&#39; F R F&#39; R U&#39; R&#39; U2 R</span><br/>
+                        <span class="coll">(U) R U2 R&#39; U&#39; F&#39; R U2 R&#39; U&#39; R U&#39; R&#39; F R U&#39; R&#39;</span><br/>
                     </td>
-                </tr>
-            </table>
-            
-            <h1>CMLL H (Symmetric Cross):</h1>
-            <table>
-                <tr>
-                    <td><h3>H 1</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=R U2 R&#39; U&#39; R U R&#39; U&#39; R U&#39; R&#39; " />
-                    </td>
-                    <td>
-                        R U2 R&#39; U&#39; R U R&#39; U&#39; R U&#39; R&#39; <br/>
-                        y&#39; R&#39; U&#39; R U&#39; R&#39; U R U&#39; R&#39; U2 R<br/>
-                        R&#39; F R U R&#39; F R U&#39; R&#39; F&#39; R<br/>
-                        L&#39; U2 L U L&#39; U&#39; L U L&#39; U L<br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h3>H 2</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=y&#39; R U R&#39; U R U L&#39; U R&#39; U&#39; L" />
-                    </td>
-                    <td>
-                        y&#39; R U R&#39; U R U L&#39; U R&#39; U&#39; L<br/>
-                        y&#39; R U R&#39; U R U r&#39; F R&#39; F&#39; r<br/>
-                        y&#39; r U R&#39; U R U r&#39; F R&#39; F&#39; R<br/>
-                        y&#39; R&#39; F&#39; R U2 R U2 R&#39; F U&#39; R U&#39; R&#39;<br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h3>H 3</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=L&#39; U2 y R U2 R U2 R&#39; U2 F y x" />
-                    </td>
-                    <td>
-                        y R U2 R2 F R F&#39; U2 R&#39; F R F&#39;<br/>
-                        y2 R&#39; F&#39; R U2 R&#39; F2 R U&#39; F U F&#39;<br/>
-                        y R U2 R2 U&#39; R U&#39; R&#39; U2 F R F&#39;<br/>
-                        R&#39; F2 D R2 U R2 D&#39; F2 R<br/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h3>H 4</h3></td>
-                    <td>
-                        <img src="http://stachu.cubing.net/v/?fmt=png&size=100&bg=t&stage=cmll&amp;view=plan&case=F R U R&#39; U&#39; R U R&#39; U&#39; R U R&#39; U&#39; F&#39;" />
-                    </td>
-                    <td>
-                        <span class="pref">F R U R&#39; U&#39; R U R&#39; U&#39; R U R&#39; U&#39; F&#39;</span><br/>
-                        F U R U&#39; R&#39; U R U&#39; R&#39; U R U&#39; R&#39; F&#39;<br/>
-                        F&#39; L&#39; U&#39; L U L&#39; U&#39; L U L&#39; U&#39; L U F<br/>
-                        F&#39; U&#39; L&#39; U L U&#39; L&#39; U L U&#39; L&#39; U L F<br/>
-                    </td>
-    
                 </tr>
             </table>
         </body>
