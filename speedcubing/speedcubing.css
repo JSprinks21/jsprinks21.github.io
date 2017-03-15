@@ -38,8 +38,17 @@ a:active {
     color: #004d00;
 }
 
+.white_body {
+    background-color: white;
+}
+
 .latin-list {
     font-family: "Lower Latin";
+}
+
+.case_img {
+    height: 8em;
+    width: 8em;
 }
 
 .cmll {
