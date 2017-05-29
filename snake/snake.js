@@ -104,7 +104,7 @@ Snake.prototype.run = function(ctx) {
     //set interval main loop
     let self = this;
     this.interval = setInterval(function() {
-	self.move(ctx);
+	self.move();
 	self.fillBackground(ctx);
 	self.drawFood(ctx);
 	self.drawSnake(ctx);
@@ -154,7 +154,7 @@ Snake.prototype.drawFood = function(ctx) {
     ctx.fillStyle = this.food_color;
     ctx.fillRect(this.food_loc[0], this.food_loc[1], 1, 1);
 };
-Snake.prototype.move = function(ctx) {
+Snake.prototype.move = function() {
     let loc = [this.pos[0], this.pos[1]];
     switch (this.dir) {
     case this.Direction.LEFT:
@@ -180,7 +180,6 @@ Snake.prototype.move = function(ctx) {
 	this.pos = [80, 45];
 	this.snake = [];
 	this.createSnake();
-	this.fillBackground(ctx);
     } else if (loc[0] == this.food_loc[0] && loc[1] == this.food_loc[1]) {
 	//eat the food, setting food_loc to null and prepending that position to the snake
 	this.food_loc = null;
@@ -189,9 +188,7 @@ Snake.prototype.move = function(ctx) {
 	this.pos = loc;
     } else {
 	//move snake
-	let last = this.snake.pop();
-	ctx.fillStyle = this.bg_color;
-	ctx.fillRect(last[0] - 1, last[1] - 1, 3, 3);
+	this.snake.pop();
 	this.snake.unshift(loc);
 	this.pos = loc;
     }
