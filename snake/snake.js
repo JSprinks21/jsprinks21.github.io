@@ -16,15 +16,19 @@ function main() {
 	
 	switch (e.keyCode) {
 	case game.Key.LEFT:
+	case game.Key.A:
 	    game.left();
 	    break;
 	case game.Key.UP:
+	case game.Key.W:
 	    game.up();
 	    break;
 	case game.Key.RIGHT:
+	case game.Key.D:
 	    game.right();
 	    break;
 	case game.Key.DOWN:
+	case game.Key.S:
 	    game.down();
 	    break;
 	default:
@@ -54,7 +58,11 @@ Game.prototype = {
 	LEFT: 37,
 	UP: 38,
 	RIGHT: 39,
-	DOWN: 40
+	DOWN: 40,
+	W: 87,
+	A: 65,
+	S: 83,
+	D: 68
     },
 
     run(context) {
