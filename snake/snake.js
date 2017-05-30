@@ -83,8 +83,9 @@ function Snake() {
     this.bg_color = "black";
     this.cvWidth = 160;
     this.cvHeight = 90;
-    this.pos = [80,45];
+    this.pos = [this.cvWidth / 2, this.cvHeight / 2];
     this.dir = null;
+    this.dir_staging = null;
     this.food_loc = null;
     this.interval = null;
 }
@@ -120,7 +121,7 @@ Snake.prototype.playPause = function(ctx) {
 };
 Snake.prototype.scale = function(ctx) {
     //scale canvas to 160x90
-    ctx.scale(ctx.canvas.clientWidth / 160, ctx.canvas.clientHeight / 90);
+    ctx.scale(ctx.canvas.clientWidth / this.cvWidth, ctx.canvas.clientHeight / this.cvHeight);
 };
 Snake.prototype.fillBackground = function(ctx) {
     ctx.fillStyle = this.bg_color;
@@ -156,6 +157,12 @@ Snake.prototype.drawFood = function(ctx) {
 };
 Snake.prototype.move = function() {
     let loc = [this.pos[0], this.pos[1]];
+
+    if (this.dir_staging != null) {
+	this.dir = this.dir_staging
+	this.dir_staging = null;
+    }
+    
     switch (this.dir) {
     case this.Direction.LEFT:
 	loc[0] -= 1;
@@ -177,7 +184,7 @@ Snake.prototype.move = function() {
     if (!(this.valid(loc))) {
 	//reset
 	this.snake_length = 5;
-	this.pos = [80, 45];
+	this.pos = [this.cvWidth / 2, this.cvHeight / 2];
 	this.snake = [];
 	this.createSnake();
     } else if (loc[0] == this.food_loc[0] && loc[1] == this.food_loc[1]) {
@@ -195,22 +202,22 @@ Snake.prototype.move = function() {
 };
 Snake.prototype.left = function() {
     if (this.dir != this.Direction.RIGHT) {
-	this.dir = this.Direction.LEFT;
+	this.dir_staging = this.Direction.LEFT;
     }
 };
 Snake.prototype.up = function() {
     if (this.dir != this.Direction.DOWN) {
-	this.dir = this.Direction.UP;
+	this.dir_staging = this.Direction.UP;
     }
 };
 Snake.prototype.right = function() {
     if (this.dir != this.Direction.LEFT) {
-	this.dir = this.Direction.RIGHT;
+	this.dir_staging = this.Direction.RIGHT;
     }
 };
 Snake.prototype.down = function() {
     if (this.dir != this.Direction.UP) {
-	this.dir = this.Direction.DOWN;
+	this.dir_staging = this.Direction.DOWN;
     }
 };
 //coord is of the form [x, y]
