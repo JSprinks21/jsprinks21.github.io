@@ -1,7 +1,7 @@
 function main() {
 
-    cv = document.getElementById("canvas");
-    ctx = cv.getContext("2d");
+	cv = document.getElementById("canvas");
+	ctx = cv.getContext("2d");
     
     //set canvas size
     cv.width = document.body.clientWidth;
@@ -81,9 +81,9 @@ function Snake() {
     this.snake_color = "green";
     this.food_color = "red";
     this.bg_color = "black";
-    this.cvWidth = 160;
-    this.cvHeight = 90;
-    this.pos = [this.cvWidth / 2, this.cvHeight / 2];
+    this.cvWidth = 80;
+    this.cvHeight = 45;
+    this.pos = [Math.floor(this.cvWidth / 2), Math.floor(this.cvHeight / 2)];
     this.dir = null;
     this.dir_staging = null;
     this.food_loc = null;
@@ -184,7 +184,7 @@ Snake.prototype.move = function() {
     if (!(this.valid(loc))) {
 	//reset
 	this.snake_length = 5;
-	this.pos = [this.cvWidth / 2, this.cvHeight / 2];
+	this.pos = [Math.floor(this.cvWidth / 2), Math.floor(this.cvHeight / 2)];
 	this.snake = [];
 	this.createSnake();
     } else if (loc[0] == this.food_loc[0] && loc[1] == this.food_loc[1]) {
